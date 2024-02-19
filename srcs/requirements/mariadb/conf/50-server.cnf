@@ -1,0 +1,11 @@
+[server]  # Section principale du fichier de configuration
+[mysqld]  # Section spécifique pour le serveur MySQL
+user = root  # Utilisateur sous lequel MySQL s'exécute
+pid-file = /run/mysqld/mysqld.pid  # Chemin vers le fichier PID pour identifier le processus MySQ
+basedir = /usr  # Répertoire de base de l'installation MySQL
+datadir = /var/lib/mysql  # Répertoire où les données de MySQL sont stockées
+tmpdir = /tmp  # Répertoire temporaire utilisé par MySQL
+lc-messages-dir = /usr/share/mysql  # Répertoire des fichiers de localisation pour les messages de MySQL
+lc-messages = en_US  # Langue des messages MySQL (anglais américain)
+skip-external-locking  # Ignorer le verrouillage externe pour améliorer les performances
+bind-address = *  # Adresse IP à laquelle MySQL est lié, ici "*" signifie toutes les adresses disponibles
